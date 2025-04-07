@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
+}
+
+nav {
+  background-color: blueviolet;
+  padding: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  font-size: 1.2rem;
+}
+
+.emoji {
+  font-size: 30px;
+}
+
+nav ul li input {
+  width: 400px;
+  height: 25px;
+  border-radius: 5px;
+  padding: 1px;
+  outline: none;
+  border: 1px solid white;
+  background-color: blueviolet;
+  margin: 2px;
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+}
+
+nav ul li input::placeholder {
+  color: white;
+  text-align: center;
+}
+
+nav ul li input[type="submit"] {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  color: blueviolet;
+  font-weight: bolder;
+}
+
+nav ul li input[type="submit"]:hover {
+  background-color: blueviolet;
+  color: white;
+  font-weight: bolder;
+}
+
+nav ul li input:focus {
+  outline: white solid 1px;
+  border: none;
+  color: white;
+  text-align: center;
+}
+
+.Main {
+  margin: 2% 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Box {
+  padding: 5px;
+  margin: 15px;
+  border: 1px solid gray;
+
+  width: 35%;
+  height: 80vh;
+  border-radius: 20px;
+  background-color: rgb(37, 36, 36);
+  overflow: scroll;
+}
+
+.Box div .movie {
+  display: flex;
+  align-items: center;
+  width: 470px;
+  border-bottom: 1px solid gray;
+
+  justify-content: space-between;
+}
+
+.Box div .movie {
+  cursor: pointer;
+}
+
+.Movie {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.close {
+  background-color: black;
+  padding: 4px 8px;
+  border-radius: 50%;
+  position: relative;
+  left: 460px;
+  top: 10px;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.View {
+  width: 55%;
+  padding: 5px;
+  margin: 15px;
+  border: 1px solid gray;
+  display: flex;
+  height: 80vh;
+  border-radius: 20px;
+  background-color: rgb(37, 36, 36);
+  overflow: scroll;
+  justify-content: center;
+  padding: 5px;
+}
+
+.details {
+  display: flex;
+  flex-wrap: row;
+}
+.info {
+  padding: 10px;
+  text-transform: capitalize;
+}
